@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.app {
+  font-family: 'Barriecito', cursive;
+  background-color: var(--bg-color);
+}
+
+.app__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+  height: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+bold {
+  font-weight: bold;
+  color: var(--tertiary-color);
+}
+
+:root {
+  /* light theme colors */
+  --bg-light: #78AEFF;
+  --paragraph-light: #ecece0;
+  --highlight-light: #ff8906;
+  --primary-light: #fffffe;
+  --secondary-light: #f25f4c;
+  --tertiary-light: #e53170;
+
+  /* dark theme colors */
+  --bg-dark: #272343;
+  --paragraph-dark: #a7a9be;
+  --highlight-dark: #ff8906;
+  --primary-dark: #fffffe;
+  --secondary-dark: #f25f4c;
+  --tertiary-dark: #e53170;
+}
+
+.light-theme {
+  --bg-color: var(--bg-light);
+  --paragraph-color: var(--paragraph-light);
+  --highlight-color: var(--highlight-light);
+  --primary-color: var(--primary-light);
+  --secondary-color: var(--secondary-light);
+  --tertiary-color: var(--tertiary-light);
+}
+
+.dark-theme {
+  --bg-color: var(--bg-dark);
+  --paragraph-color: var(--paragraph-dark);
+  --highlight-color: var(--highlight-dark);
+  --primary-color: var(--primary-dark);
+  --secondary-color: var(--secondary-dark);
+  --tertiary-color: var(--tertiary-dark);
+}

@@ -1,0 +1,42 @@
+.footer {
+    padding: 0 0 20px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__note {
+    color: var(--highlight-color);
+}
+
+.footer__note a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+.footer__note a:hover {
+    color: var(--highlight-color);
+}
+
+.scroll {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .footer__note a {
+        text-decoration: underline;
+    }
+
+    .scroll {
+        display: block;
+        position: fixed;
+        left: 80;
+        right: 0;
+        bottom: 0;
+        padding: 30px;        
+        color: #e53170b2;
+    }
+}

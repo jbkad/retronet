@@ -1,12 +1,35 @@
+import { scroll_icon } from '../styles/Constants';
 import '../styles/Footer.css';
 
 export function Footer() {
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+            delay: 0
+        })
+    };
+
     return (
         <footer className='footer'>
             <div className='footer__container'>
-                <div className='footer__note'>
-                    Footer
+                <h3 className='footer__note'>
+                    <a
+                        href="https://www.linkedin.com/in/jbkad/"
+                        target='_blank' 
+                        rel="noreferrer"
+                    >
+                        Made by Joyce Kadibu
+                    </a>
+                </h3>
+                <div 
+                    className='scroll'
+                    onClick={() => {
+                        scrollToTop(); 
+                    }}
+                >
+                    {scroll_icon}
                 </div>
             </div>
         </footer>

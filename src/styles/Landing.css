@@ -1,0 +1,94 @@
+.landing {
+    text-align: center;
+    background-color: var(--bg-color);
+    padding: 20px 0 50px 0;
+}
+
+/* texts */
+.landing__header {
+    color: var(--paragraph-color);
+}
+
+.landing__date {
+    color: var(--primary-color);
+}
+
+.landing__date-animation {
+    color: var(--highlight-color);
+}
+
+.landing__body {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--paragraph-color);
+}
+
+.landing__websites {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .landing__websites {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px 0 0 0;
+    }
+}
+
+.block {
+    margin: 0 10px 10px 10px;
+    padding: 2rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.block:hover {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* company buttons */
+.youtube-btn {
+    background-color:#c4302b;
+    color: white;
+}
+
+.yahoo-btn {
+    background-color: #720e9e;
+    color: white; 
+}
+
+.wikipedia-btn {
+    background-color: white; 
+    color: black;
+}
+
+.reddit-btn {
+    background-color: #FF4300;
+    color: white; 
+
+}
+
+.airbnb-btn {
+    background-color: #FF5A5F;
+    color: white; 
+}
+
+.buzzfeed-btn {
+    background-color: #ee3322;
+    color: white; 
+}
+
+.linkedin-btn {
+    background-color: #0072b1;
+    color: white; 
+}
+
+.bloomberg-btn {
+    background-color: #0068ff;
+    color: white; 
+}
