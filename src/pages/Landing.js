@@ -17,7 +17,7 @@ export function Landing() {
 
         archivedUrlPromise.then(archivedUrl => {
             if (archivedUrl) {
-                window.open(archivedUrl, '_blank');
+                window.location.href(archivedUrl, '_blank');
             }   else {
                 console.log(`Sorry! We don't have website data for $(url) for this specific date.`);
             }
