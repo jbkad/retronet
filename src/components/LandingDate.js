@@ -39,28 +39,23 @@ const date = today.getDate();
 const month = monthNames[today.getMonth()];
 const daySuffix = getDaySuffix(date);
 
-// Calculates current year for typing text
-const currentYear = today.getFullYear();
-const yearTenYearsAgo = today.getFullYear() - 10;
-
 // Animates the year: '2023 -> 2013'
-function TypedAnimation() {
+function TypedAnimation({ strings, typeSpeed }) {
 
     const dateAnimation = React.useRef(null);
 
     React.useEffect(() => {
         const typed = new Typed(dateAnimation.current, {
-            strings: [`${currentYear}`, `${yearTenYearsAgo}`], 
-            typeSpeed: 100
+            strings: strings, 
+            typeSpeed: typeSpeed
         });
 
         return () => {
             typed.destroy();
         };
-    },  []);
+    },  [strings, typeSpeed]);
 
     return (
-        
         <span 
             ref={dateAnimation}
             className='landing__date-animation'
@@ -70,14 +65,18 @@ function TypedAnimation() {
 
 function LandingDate() {
     const currentDate = date + daySuffix + " " + month + " "
+    const strings = [`${today.getFullYear()}`, `${today.getFullYear() - 10}`];
+    const typeSpeed = 100;
 
     return (
         <h2 className="landing__date">
-            {currentDate} <TypedAnimation />
+            {currentDate} 
+            <TypedAnimation 
+                strings={strings}
+                typeSpeed={typeSpeed}
+            />
         </h2>
     )
 }
-
-
 
 export { LandingDate };

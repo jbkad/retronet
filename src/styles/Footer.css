@@ -21,7 +21,7 @@
     color: var(--highlight-color);
 }
 
-.scroll {
+.footer__scroll-btn {
     display: none;
 }
 
@@ -30,7 +30,7 @@
         text-decoration: underline;
     }
 
-    .scroll {
+    .footer__scroll-btn {
         display: block;
         position: fixed;
         left: 80;

@@ -14,7 +14,9 @@ export function Footer() {
     return (
         <footer className='footer'>
             <div className='footer__container'>
-                <h3 className='footer__note'>
+                <h3 
+                    className='footer__note'
+                >
                     <a
                         href="https://www.linkedin.com/in/jbkad/"
                         target='_blank' 
@@ -24,7 +26,8 @@ export function Footer() {
                     </a>
                 </h3>
                 <div 
-                    className='scroll'
+                    className='footer__scroll-btn'
+                    data-testid='footer__scroll-btn'
                     onClick={() => {
                         scrollToTop(); 
                     }}

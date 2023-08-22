@@ -25,6 +25,7 @@ To get started with RetroNet, follow these steps:
 
 Demo the repo?
 1. Follow this url: https://retronet.netlify.app/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/80b0decf-70bc-4bbd-8d75-fb830d3830af/deploy-status)](https://app.netlify.com/sites/retronet/deploys)
 
 
 Clone the repo?
