@@ -1,6 +1,7 @@
 import { fetchArchiveData } from '../components/FetchData';
 
 export async function handleButtonClick(websiteUrl, setLoadingStatus) {
+
     setLoadingStatus(true);
 
     try {
