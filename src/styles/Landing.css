@@ -24,15 +24,15 @@
 
 .landing__websites {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px 10px 0 10px;
 }
 
 @media (max-width: 600px) {
     .landing__websites {
-        display: grid;
+        gap: 0;
         grid-template-columns: 1fr;
-        padding: 20px 0 0 0;
     }
 }
 
@@ -44,11 +44,15 @@
     text-align: center;
     font-size: 1.2rem;
     font-family: 'Quicksand', sans-serif;
+    
+    width: 100%;
+    margin: 0 auto 10px;
 }
 
 .block:hover {
     font-weight: bold;
-    font-size: 1.25rem;
+    color: black;
+    /* font-size: 1.25rem; */
 }
 
 /* company buttons */
@@ -70,7 +74,6 @@
 .reddit-btn {
     background-color: #FF4300;
     color: white; 
-
 }
 
 .airbnb-btn {

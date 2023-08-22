@@ -1,8 +1,8 @@
 import { LandingDate } from '../components/LandingDate';
 import { fetchArchiveData } from '../components/FetchData';
 import { useEffect, useState } from 'react';
-import '../styles/Landing.css';
 import { Loading } from '../components/Loading';
+import '../styles/Landing.css';
 
 export function Landing() {
 
@@ -50,56 +50,56 @@ export function Landing() {
                 </p>
                 <div className='landing__websites'>
                     <div className='column'>
-                        <div 
+                        <button 
                             className="youtube-btn block" 
                             onClick={() => handleButtonClick('http://www.youtube.com')}
                         >
                             YouTube
-                        </div>
-                        <div 
+                        </button>
+                        <button 
                             className="reddit-btn block" 
                             onClick={() => handleButtonClick('http://www.reddit.com')}
                         >
                             Reddit
-                        </div>
-                        <div 
+                        </button>
+                        <button 
                             class="bloomberg-btn block" 
                             onClick={() => handleButtonClick('http://www.bloomberg.com')}
                         >
                             Bloomberg
-                        </div>
-                        <div 
+                        </button>
+                        <button 
                             className="wikipedia-btn block" 
                             onClick={() => handleButtonClick('http://en.wikipedia.org/wiki/Main_Page')}
                         >
                             Wikipedia
-                        </div>
+                        </button>
                     </div>
                     <div className='column'>
-                        <div 
+                        <button 
                             class="yahoo-btn block" 
                             onClick={() => handleButtonClick('http://www.yahoo.com')}
                         >
                             Yahoo
-                        </div>
-                        <div 
+                        </button>
+                        <button 
                             class="airbnb-btn block" 
                             onClick={() => handleButtonClick('http://www.airbnb.com')}
                         >
                             Airbnb
-                        </div>
-                        <div 
+                        </button>
+                        <button 
                             class="buzzfeed-btn block" 
                             onClick={() => handleButtonClick('http://www.buzzfeed.com')}
                         >
                             Buzzfeed
-                        </div>
-                        <div 
+                        </button>
+                        <button 
                             class="linkedin-btn block" 
                             onClick={() => handleButtonClick('http://www.linkedin.com')}
                         >
                             LinkedIn
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
