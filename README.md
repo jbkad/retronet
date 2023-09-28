@@ -14,7 +14,6 @@ RetroNet is a web application that lets you step back in time and explore your f
 ## Features
 
 - Browse popular websites of the past, such as YouTube, Reddit, Wikipedia, and more.
-- Enter any website URL to view how it looked exactly 10 years ago.
 - Elegant user interface with a seamless time-travel experience.
 - Dark and light theme options to suit your preference.
 
