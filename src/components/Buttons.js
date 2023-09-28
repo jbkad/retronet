@@ -7,28 +7,28 @@ export function Buttons({ handleButtonClick }) {
                 <button 
                     type="button"
                     className="youtube button" 
-                    onClick={() => handleButtonClick('http://www.youtube.com')}
+                    onClick={() => handleButtonClick('https://www.youtube.com')}
                 >
                     YouTube
                 </button>
                 <button 
                     type="button"
                     className="reddit button" 
-                    onClick={() => handleButtonClick('http://www.reddit.com')}
+                    onClick={() => handleButtonClick('https://www.reddit.com')}
                 >
                     Reddit
                 </button>
                 <button 
                     type="button"
                     className="bloomberg button" 
-                    onClick={() => handleButtonClick('http://www.bloomberg.com')}
+                    onClick={() => handleButtonClick('https://www.bloomberg.com')}
                 >
                     Bloomberg
                 </button>
                 <button 
                     type="button"
                     className="wikipedia button" 
-                    onClick={() => handleButtonClick('http://en.wikipedia.org/wiki/Main_Page')}
+                    onClick={() => handleButtonClick('https://en.wikipedia.org/wiki/Main_Page')}
                 >
                     Wikipedia
                 </button>
@@ -37,28 +37,28 @@ export function Buttons({ handleButtonClick }) {
                 <button 
                     type="button"
                     className="yahoo button" 
-                    onClick={() => handleButtonClick('http://www.yahoo.com')}
+                    onClick={() => handleButtonClick('https://www.yahoo.com')}
                 >
                     Yahoo
                 </button>
                 <button 
                     type="button"
                     className="airbnb button" 
-                    onClick={() => handleButtonClick('http://www.airbnb.com')}
+                    onClick={() => handleButtonClick('https://www.airbnb.com')}
                 >
                     Airbnb
                 </button>
                 <button 
                     type="button"
                     className="buzzfeed button" 
-                    onClick={() => handleButtonClick('http://www.buzzfeed.com')}
+                    onClick={() => handleButtonClick('https://www.buzzfeed.com')}
                 >
                     Buzzfeed
                 </button>
                 <button 
                     type="button"
                     className="linkedin button" 
-                    onClick={() => handleButtonClick('http://www.linkedin.com')}
+                    onClick={() => handleButtonClick('https://www.linkedin.com')}
                 >
                     LinkedIn
                 </button>

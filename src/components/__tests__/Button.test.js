@@ -25,13 +25,14 @@ test('clicking button navigates to web address', () => {
   fireEvent.click(linkedInButton);
 
   expect(handleButtonClickMock).toHaveBeenCalledTimes(8);
-  expect(handleButtonClickMock).toHaveBeenCalledWith('http://www.youtube.com');
-  expect(handleButtonClickMock).toHaveBeenCalledWith('http://www.reddit.com');
-  expect(handleButtonClickMock).toHaveBeenCalledWith('http://www.bloomberg.com');
-  expect(handleButtonClickMock).toHaveBeenCalledWith('http://en.wikipedia.org/wiki/Main_Page');
-  expect(handleButtonClickMock).toHaveBeenCalledWith('http://www.yahoo.com');
-  expect(handleButtonClickMock).toHaveBeenCalledWith('http://www.airbnb.com');
-  expect(handleButtonClickMock).toHaveBeenCalledWith('http://www.buzzfeed.com');
-  expect(handleButtonClickMock).toHaveBeenCalledWith('http://www.linkedin.com');
+  expect(handleButtonClickMock).toHaveBeenCalledWith('https://www.youtube.com');
+  expect(handleButtonClickMock).toHaveBeenCalledWith('https://www.reddit.com');
+  expect(handleButtonClickMock).toHaveBeenCalledWith('https://www.bloomberg.com');
+  expect(handleButtonClickMock).toHaveBeenCalledWith('https://en.wikipedia.org/wiki/Main_Page');
+  expect(handleButtonClickMock).toHaveBeenCalledWith('https://www.yahoo.com');
+  expect(handleButtonClickMock).toHaveBeenCalledWith('https://www.airbnb.com');
+  expect(handleButtonClickMock).toHaveBeenCalledWith('https://www.buzzfeed.com');
+  expect(handleButtonClickMock).toHaveBeenCalledWith('https://www.linkedin.com');
 });
+
 
