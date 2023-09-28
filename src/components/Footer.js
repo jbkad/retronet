@@ -1,4 +1,4 @@
-import { scroll_icon } from '../styles/Constants';
+import { ReactComponent as ScrollIcon } from '../assests/ScrollIcon.svg';
 import '../styles/Footer.css';
 
 export function Footer() {
@@ -13,9 +13,9 @@ export function Footer() {
 
     return (
         <footer className='footer'>
-            <div className='footer__container'>
+            <div className='container'>
                 <h3 
-                    className='footer__note'
+                    className='note'
                 >
                     <a
                         href="https://www.linkedin.com/in/jbkad/"
@@ -26,13 +26,13 @@ export function Footer() {
                     </a>
                 </h3>
                 <div 
-                    className='footer__scroll-btn'
+                    className='scroll'
                     data-testid='footer__scroll-btn'
                     onClick={() => {
                         scrollToTop(); 
                     }}
                 >
-                    {scroll_icon}
+                    <ScrollIcon />
                 </div>
             </div>
         </footer>

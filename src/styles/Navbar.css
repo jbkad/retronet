@@ -2,21 +2,21 @@
     width: 100%;
 }
 
-.navbar__container {
+.navbar .container {
     padding: 15px 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar__title {
+.navbar .title {
     color: var(--primary-color);
 }
 
-.navbar__toggle {
+.navbar .toggle {
     color: var(--highlight-color);
 }
 
-.navbar__toggle:hover {
+.navbar .toggle:hover {
     color: var(--primary-color);
 }

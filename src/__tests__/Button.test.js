@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
-import { Buttons } from '../Buttons.js';
+import { Buttons } from '../components/Buttons.js';
 
 test('clicking button navigates to web address', () => {
   const handleButtonClickMock = jest.fn();

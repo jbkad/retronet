@@ -1,6 +1,6 @@
 import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
-import { Landing } from './pages/Landing';
+import { Home } from './pages/Home';
 import { ThemeContext } from './components/ThemeToggle';
 import { useContext } from 'react';
 import './App.css';
@@ -10,9 +10,9 @@ function App() {
 
   return (
     <div className={`app ${theme}`}>
-      <div className='app__container'>
+      <div className='container'>
           <Navbar />
-          <Landing />
+          <Home />
           <Footer />
       </div>
     </div>

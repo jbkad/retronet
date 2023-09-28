@@ -11,7 +11,7 @@
     z-index: 1;
 }
 
-.loading__text {
+.loading .text {
     font-size: 3rem;
     color: white;
     animation: flash 1s alternate infinite;

@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import { Footer } from "../Footer";
+import { Footer } from "../components/Footer";
 
 describe('Footer component', () => {
     test('clicking button navigates to top of page', () => {

@@ -1,15 +1,15 @@
-import { fetchArchiveData } from '../FetchData';
+import { fetchArchiveData } from '../components/FetchData';
 
 global.fetch = jest.fn();
 
 test('fetchArchiveData returns the archived URL', async () => {
-  const websiteUrl = 'http://youtube.com';
-  const currentDate = new Date('2023-08-22');
+  const websiteUrl = 'https://youtube.com';
+  const currentDate = new Date('2023-09-28');
 
   const mockedResponse = {
     archived_snapshots: {
       closest: {
-        url: 'http://example.com/archive_snapshot'
+        url: 'https://example.com/archive_snapshot'
       }
     }
   };
@@ -21,11 +21,11 @@ test('fetchArchiveData returns the archived URL', async () => {
 
   const archivedUrl = await fetchArchiveData(websiteUrl, currentDate);
 
-  expect(archivedUrl).toBe('http://example.com/archive_snapshot');
+  expect(archivedUrl).toBe('https://example.com/archive_snapshot');
 });
 
 test('fetchArchiveData handles fetch error', async () => {
-  const websiteUrl = 'http://example.com';
+  const websiteUrl = 'https://example.com';
   const currentDate = new Date('2023-08-22');
 
   // Mock the fetch response with an error

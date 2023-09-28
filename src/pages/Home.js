@@ -3,9 +3,9 @@ import { handleButtonClick } from '../utils/buttonClickHandler';
 import { useEffect, useState } from 'react';
 import { Loading } from '../components/Loading';
 import { Buttons } from '../components/Buttons';
-import '../styles/Landing.css';
+import '../styles/Home.css';
 
-export function Landing() {
+export function Home() {
 
     const [isLoading, setIsLoading] = useState(false);
 
@@ -20,14 +20,17 @@ export function Landing() {
     }, [isLoading]);
 
     return (
-        <nav className='landing'>
+        <nav className='home'>
             {isLoading && <Loading />}
-            <div className='landing__container'>
-                <h3 className='landing__header'>
+            <div className='container'>
+                <div className='header'>
                     Step back in time to <LandingDate />
-                </h3>
-                <p className='landing__description'>
-                    Welcome to <bold>Retro Net</bold>, your ultimate time-travel portal to the digital past! Witness the pixelated charm, forgotten designs, and web trends that once defined the online landscape. Relive the nostalgia by shooting <bold>10 years back</bold> through a click of a button.
+                </div>
+                <p className='description'>
+                    Welcome to <strong>Retro Net</strong>, your ultimate time-travel portal to the digital past! Witness the pixelated charm, forgotten designs, and web trends that once defined the online landscape. Relive the nostalgia by shooting <strong>10 years back</strong> through a click of a button.
+                </p>
+                <p className='note'>
+                    (Please ensure that popup windows are enabled in your browser!)
                 </p>
                 <Buttons handleButtonClick={(url) => handleButtonClick(url, setIsLoading)} />
             </div>

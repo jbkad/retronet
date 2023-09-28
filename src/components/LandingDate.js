@@ -58,7 +58,7 @@ function TypedAnimation({ strings, typeSpeed }) {
     return (
         <span 
             ref={dateAnimation}
-            className='landing__date-animation'
+            className='animation'
         />
     )
 }
@@ -69,7 +69,7 @@ function LandingDate() {
     const typeSpeed = 100;
 
     return (
-        <h2 className="landing__date">
+        <h2 className="date">
             {currentDate} 
             <TypedAnimation 
                 strings={strings}

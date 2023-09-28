@@ -1,23 +1,29 @@
-.landing {
+.home {
     text-align: center;
     background-color: var(--bg-color);
     padding: 20px 0 50px 0;
 }
 
 /* texts */
-.landing__header {
+.home .header {
     color: var(--paragraph-color);
 }
 
-.landing__date {
+.home .date {
     color: var(--primary-color);
 }
 
-.landing__date-animation {
+.home .date .animation {
     color: var(--highlight-color);
 }
 
-.landing__description {
+.home .description {
     font-family: 'Quicksand', sans-serif;
     color: var(--paragraph-color);
+}
+
+.home .note {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--tertiary-color);
+    font-size: 1rem;
 }

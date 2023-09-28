@@ -2,35 +2,35 @@
     padding: 0 0 20px 0;
 }
 
-.footer__container {
+.footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer__note {
+.footer .note {
     color: var(--highlight-color);
 }
 
-.footer__note a {
+.footer .note a {
     text-decoration: none;
     color: var(--tertiary-color);
 }
 
-.footer__note a:hover {
+.footer .note a:hover {
     color: var(--highlight-color);
 }
 
-.footer__scroll-btn {
+.footer .scroll {
     display: none;
 }
 
 @media (max-width: 600px) {
-    .footer__note a {
+    .footer .note a {
         text-decoration: underline;
     }
 
-    .footer__scroll-btn {
+    .footer .scroll {
         display: block;
         position: fixed;
         left: 80;
