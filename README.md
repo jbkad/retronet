@@ -11,6 +11,9 @@
 
 RetroNet is a web application that lets you step back in time and explore your favorite websites as they appeared a decade ago. With just a click, you can rediscover the design, content, and nostalgia of the online world from the past.
 
+Wanna see? [Follow here.](https://retronet.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/80b0decf-70bc-4bbd-8d75-fb830d3830af/deploy-status)](https://app.netlify.com/sites/retronet/deploys)
+
 ## Features
 
 - Browse popular websites of the past, such as YouTube, Reddit, Wikipedia, and more.
@@ -22,14 +25,8 @@ RetroNet is a web application that lets you step back in time and explore your f
 
 To get started with RetroNet, follow these steps:
 
-Demo the repo?
-1. Follow this url: https://retronet.netlify.app/
-[![Netlify Status](https://api.netlify.com/api/v1/badges/80b0decf-70bc-4bbd-8d75-fb830d3830af/deploy-status)](https://app.netlify.com/sites/retronet/deploys)
-
-
-Clone the repo?
 1. Clone the repository: `git clone https://github.com/yourusername/retro-net.git`
-2. Navigate to the project directory: `cd retro-net`
+2. Navigate to the project directory: `cd retronet`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
 
@@ -42,5 +39,4 @@ Clone the repo?
 
 ## Contact
 
-For any questions or feedback, feel free to reach out:
-LinkedIn: [@jbkad](https://linkedin.com/in/jbkad)
+For any questions or feedback, [feel free to reach out.](https://linkedin.com/in/jbkad)
