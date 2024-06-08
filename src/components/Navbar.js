@@ -1,31 +1,13 @@
-import { useContext } from 'react';
-import { ReactComponent as MenuIcon } from '../assests/MenuIcon.svg';
-import { ReactComponent as LightThemeIcon } from '../assests/LightThemeIcon.svg';
-import { ReactComponent as DarkThemeIcon } from '../assests/DarkThemeIcon.svg';
-import { ThemeContext } from './ThemeToggle';
-import '../styles/Navbar.css';
-
 export function Navbar() {
-
-    const { theme, toggleTheme } = useContext(ThemeContext);
-
     return (
-        <nav className='navbar'>
-            <div className='container'>
-                <h1 className='title'>
-                    <MenuIcon />
+        <nav className="w-full">
+            <div className='pb-8'>
+                <div className="flex w-fit font-jaro text-4xl text-primary hover:text-paragraph transition-colors duration-500">
                     Retro Net
-                </h1>
-                <div
-                    className='toggle'
-                    onClick={() => toggleTheme()}
-                >
-                    {theme === "dark-theme" ? (
-                        <LightThemeIcon />
-                    ) : (
-                        <DarkThemeIcon />
-                    )}
                 </div>
+                <a href="https://www.linkedin.com/in/jbkad/" target="blank" className="flex w-fit font-jaro text-md text-highlight hover:text-paragraph transition-colors duration-500">
+                    By Joyce Kadibu
+                </a>
             </div>
         </nav>
     )

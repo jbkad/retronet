@@ -1,9 +1,7 @@
-import { fetchArchiveData } from '../components/FetchData';
+import { fetchArchiveData } from './FetchData';
 
 export async function handleButtonClick(websiteUrl, setLoadingStatus) {
-
     setLoadingStatus(true);
-
     try {
         const archivedUrl = await fetchArchiveData(websiteUrl, new Date());
 

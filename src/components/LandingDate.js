@@ -33,13 +33,13 @@ function getDaySuffix(day) {
     }
 };
 
-// Calculates current date for 'Step back in time' text
+// Calculates current date
 const today = new Date();
 const date = today.getDate();
 const month = monthNames[today.getMonth()];
 const daySuffix = getDaySuffix(date);
 
-// Animates the year: '2023 -> 2013'
+// Animates year
 function TypedAnimation({ strings, typeSpeed }) {
 
     const dateAnimation = React.useRef(null);
@@ -58,7 +58,7 @@ function TypedAnimation({ strings, typeSpeed }) {
     return (
         <span 
             ref={dateAnimation}
-            className='animation'
+            className="text-highlight font-jaro"
         />
     )
 }
@@ -69,7 +69,7 @@ function LandingDate() {
     const typeSpeed = 100;
 
     return (
-        <h2 className="date">
+        <h2 className="font-jaro text-primary text-3xl p-0 mt-4">
             {currentDate} 
             <TypedAnimation 
                 strings={strings}
@@ -79,4 +79,4 @@ function LandingDate() {
     )
 }
 
-export { LandingDate };
+export default LandingDate;
