@@ -3,14 +3,14 @@ export function Buttons({ handleButtonClick }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <button 
                 type="button"
-                className="bg-[#C4302B] text-white font-jaro p-8 rounded-lg text-center text-lg md:text-xl w-full mx-auto hover:font-extrabold hover:underline underline-offset-4"
+                className="bg-[#C4302B] text-white font-jaro p-8 rounded-lg text-center text-lg md:text-xl w-full mx-auto hover:font-extrabold hover:text-black hover:underline underline-offset-4"
                 onClick={() => handleButtonClick('https://www.youtube.com')}
             >
                 YouTube
             </button>
             <button 
                 type="button"
-                className="bg-[#FF4300] text-white font-jaro p-8 rounded-lg text-center text-lg md:text-xl w-full mx-auto hover:font-extrabold hover:text-black hover:underline underline-offset-4" 
+                className="bg-[#FF4300] text-black font-jaro p-8 rounded-lg text-center text-lg md:text-xl w-full mx-auto hover:font-extrabold hover:text-white hover:underline underline-offset-4" 
                 onClick={() => handleButtonClick('https://www.reddit.com')}
             >
                 Reddit
@@ -38,7 +38,7 @@ export function Buttons({ handleButtonClick }) {
             </button>
             <button 
                 type="button"
-                className="bg-[#EE3322] text-white font-jaro p-8 rounded-lg text-center text-lg md:text-xl w-full mx-auto hover:font-extrabold hover:text-black hover:underline underline-offset-4" 
+                className="bg-[#EE3322] text-black font-jaro p-8 rounded-lg text-center text-lg md:text-xl w-full mx-auto hover:font-extrabold hover:text-white hover:underline underline-offset-4" 
                 onClick={() => handleButtonClick('https://www.buzzfeed.com')}
             >
                 Buzzfeed
