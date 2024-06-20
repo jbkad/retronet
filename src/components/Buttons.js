@@ -24,10 +24,10 @@ export function Buttons({ handleButtonClick }) {
             </button>
             <button 
                 type="button"
-                className="bg-[#FFFFFF] text-black font-jaro p-8 rounded-lg text-center text-lg md:text-xl w-full mx-auto hover:font-extrabold hover:text-black hover:underline underline-offset-4" 
-                onClick={() => handleButtonClick('https://en.wikipedia.org/wiki/Main_Page')}
+                className="bg-[#FFF0E6] text-black font-jaro p-8 rounded-lg text-center text-lg md:text-xl w-full mx-auto hover:font-extrabold hover:text-grey hover:underline underline-offset-4" 
+                onClick={() => handleButtonClick('https://www.ft.com/')}
             >
-                Wikipedia
+                Financial Times
             </button>
             <button 
                 type="button"
@@ -52,10 +52,24 @@ export function Buttons({ handleButtonClick }) {
             </button>
             <button 
                 type="button"
-                className="bg-[#000000] text-white font-jaro p-8 rounded-lg text-center text-lg md:text-xl w-full mx-auto hover:font-extrabold hover:text-grey" 
+                className="bg-[#000000] text-white font-jaro p-8 rounded-lg text-center text-lg md:text-xl w-full mx-auto hover:font-extrabold hover:text-grey hover:underline underline-offset-4" 
                 onClick={() => handleButtonClick('https://www.forbes.com')}
             >
                 Forbes
+            </button>
+            <button 
+                type="button"
+                className="bg-[#004A82] text-white font-jaro p-8 rounded-lg text-center text-lg md:text-xl w-full mx-auto hover:font-extrabold hover:text-white hover:underline underline-offset-4" 
+                onClick={() => handleButtonClick('http://www.theguardian.com/uk')}
+            >
+                The Guardian
+            </button>
+            <button 
+                type="button"
+                className="bg-[#FFFFFF] text-black font-jaro p-8 rounded-lg text-center text-lg md:text-xl w-full mx-auto hover:font-extrabold hover:text-black hover:underline underline-offset-4" 
+                onClick={() => handleButtonClick('https://en.wikipedia.org/wiki/Main_Page')}
+            >
+                Wikipedia
             </button>
         </div>
     )
