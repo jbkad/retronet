@@ -18,7 +18,6 @@ Wanna see? [Follow here.](https://retronet.netlify.app/)
 
 - Browse popular websites of the past, such as YouTube, Reddit, Wikipedia, and more.
 - Elegant user interface with a seamless time-travel experience.
-- Dark and light theme options to suit your preference.
 
 
 ## Getting Started
